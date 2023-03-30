@@ -9,7 +9,7 @@ import('../DATA.json').then(({ default: jsonData }) => {
   datas.forEach(function (data) {
     dataList += `
         <article class="post-item">
-          <img class="image-tumbnail" src="${data.pictureId}" alt="" />
+          <img class="image-tumbnail" src="${data.pictureId}" alt="${data.name}" />
           <div class="post-item__content">
             <h1 class="post-item__title">${data.name}</h1>
             <p class="post-item__date">Location In ${data.city} <br /> Rating ${data.rating}</p>
